@@ -1,0 +1,114 @@
+.nexoraDemoReq {
+  --nx-blue: #2563EB;
+  --nx-navy: #0F2A4A;
+  --nx-ink: #111827;
+  --nx-bg: #F7F5F0;
+
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 20px;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--nx-ink);
+  box-sizing: border-box;
+}
+
+.nexoraDemoReq *,
+.nexoraDemoReq *::before,
+.nexoraDemoReq *::after {
+  box-sizing: border-box;
+}
+
+.nexoraDemoReq__group {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.nexoraDemoReq label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nexoraDemoReq input,
+.nexoraDemoReq textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--nx-ink);
+  background: var(--nx-bg);
+  border: 1.5px solid rgba(17, 24, 39, 0.2);
+  border-radius: 12px;
+}
+
+.nexoraDemoReq textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.nexoraDemoReq input:focus,
+.nexoraDemoReq textarea:focus {
+  outline: none;
+  border-color: var(--nx-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.nexoraDemoReq__button {
+  justify-self: start;
+  padding: 0.8rem 1.75rem;
+  font: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  background: var(--nx-navy);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.nexoraDemoReq__button:hover {
+  background: var(--nx-blue);
+}
+
+.nexoraDemoReq__button:focus-visible {
+  outline: 3px solid var(--nx-blue);
+  outline-offset: 3px;
+}
+
+.nexoraDemoReq__error {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #B91C1C;
+}
+
+.nexoraDemoReq__error--form {
+  padding: 0.75rem 1rem;
+  background: #FEF2F2;
+  border: 1px solid #B91C1C;
+  border-radius: 12px;
+}
+
+.nexoraDemoReq__success {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.25rem 1.5rem;
+  background: #ECFDF5;
+  border: 1px solid #14B8A6;
+  border-radius: 16px;
+  color: #065F46;
+  font-weight: 500;
+}
+
+.nexoraDemoReq__success p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .nexoraDemoReq {
+    padding: 2.5rem;
+  }
+}
