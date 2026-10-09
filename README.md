@@ -230,7 +230,10 @@ Approximately **2 days**.
 
 ------------------------------------------------------------------------
 
-Coderlly-Assessment/
+## Project Structure
+
+```text
+coderlly-assessment/
 ├── page1-landing/
 │   ├── index.html
 │   ├── style.css
@@ -248,3 +251,4 @@ Coderlly-Assessment/
 │   ├── page2-mobile.png
 │   └── page2-form.png
 └── README.md
+```
